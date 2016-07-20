@@ -1,0 +1,108 @@
+.wrap{
+	width: 100%;
+	position: relative;
+}
+.heard{
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px; 
+	background: #48382b;
+}
+.heard div{
+	width: 248px;
+	margin: auto;
+}
+.heard div span{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	color: #99886b;
+	border-right: 2px solid #99886b;
+	border-radius: 6px;
+}
+.content{
+	width: 96%;
+	padding: 2%; 
+}
+.content .con1{
+	margin-bottom: 2%;
+	width: 100%;
+	border: 1px solid;
+	position: relative;
+}
+.content .con1 img{
+	width: 100%;
+}
+.content .con1 .bg{
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 8;
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+}
+
+
+
+
+
+
+
+.content .con1 .bg .p1{
+	text-align: center;
+	line-height: 20px;
+	margin-top:30%; 
+	font-size: 16px;
+	z-index: 9;
+	color: white;
+}
+.content .con1 .bg .p2{
+	text-align: center;
+	font-size: 12px;
+	color: rgba(255,255,255,0.5);
+	z-index: 9;
+}
+.content .con1 .bg2{
+	left: 0;
+	top: -20%;
+	width: 100%;
+	z-index: 8;
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+}
+.content .con1 .bg2 .p1{
+	margin-top: 25%;
+	text-align: center;
+	font-size: 16px;
+	z-index: 9;
+	color: white;
+}
+.foot{
+	width: 100%;
+	background: #48382b;
+	padding-top: 10px;
+}
+.foot ul{
+	width: 88%;
+	margin-left: 6%;
+	overflow: hidden;
+	text-align: center;
+}
+.foot ul li img{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.foot ul li{
+	vertical-align: middle;
+	text-align: center;
+	font-size: 14px;
+	float: left;
+	width: 15%;
+	margin-right: 6%;      
+	color: #c3ad88;
+}
+

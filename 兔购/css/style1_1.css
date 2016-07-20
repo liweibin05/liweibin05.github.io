@@ -1,0 +1,62 @@
+html{
+	font-size: 100px;
+}
+.wrap{
+	width: 7.5rem;
+	position: relative;
+}
+.heard{
+	width: 6.86rem;
+	height: 4.06rem;
+	padding:0.32rem; 
+	border: 0.01rem solid;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	position: relative; 
+}
+.heard .img{
+	position: absolute;
+	left: 0.32rem;
+	top: 0.32rem;
+}
+.heard .p1{
+	text-align: center;
+	font-size: 0.36rem;
+}
+.heard .p2{
+	text-align: center;
+	font-size: 0.36rem;
+	margin-top: 1.32rem;
+
+}
+.heard .p3{
+	text-align: center;
+	font-size: 0.36rem;
+	margin-top: 0.15rem;
+}
+.heard .p3 img{
+	margin:0.1rem 0.05rem;
+}
+#img{
+	position: absolute;
+	left: 2.76rem;
+	top: 3.7rem;
+}
+.content{
+	width: 6.5rem;
+	padding:0.5rem;
+	border: 0.01rem solid; 
+}
+.content p{
+	margin-top: 0.9rem;
+	text-align: center;
+	font-size: 0.26rem;
+}
+.content span{
+	margin-bottom:0.09rem;   
+	display: inline-block;
+	width: 0.7rem;
+	height: 0.02rem;
+	background: #c3ad88;
+}

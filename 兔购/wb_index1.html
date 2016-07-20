@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>打赏1</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+	<div class="wrap">
+	<div id="bg"></div>
+	<div id="dj">
+	<p><span>X</span>自定义金额</p>
+	<form action="">
+		<input class="text" type="text" placeholder="金额(元)|可输入1-200">
+		<input class="btn" type="submit" value="赞赏">
+	</form>	
+	</div>
+		<div class="heard">
+		<img class="img1" src="img/h1.png" alt="">
+		<p>赞想</p>
+		<p class="p1"><span>宝宝别闹，咬你<img src="img/xin.png" alt="">其实很爱你</span></p>
+		</div>
+		<div id="img"><img src="img/quan.png" alt=""></div>
+		<div class="content">
+			<div class="con1"><span></span>鼓励一下，期待您有更多好菜品<span style="margin-left:30px; "></span></div>
+			<div class="con2">
+				<ul>
+					<li><em>1</em>元</li>
+					<li><em>2</em>元</li>
+					<li style="margin-right: 0px;"><em>8</em>元</li>
+				</ul>
+				<ul>
+					<li><em>18</em>元</li>
+					<li><em>28</em>元</li>
+					<li style="margin-right: 0px;"><em>88</em>元</li>
+				</ul>
+			</div>
+			<div class="con3"><span>自定义金额</span></div>
+		</div>
+		<div class="foot"><img src="img/foot.png" alt=""><span>匿名赞赏</span></div>
+	</div>	
+</body>
+<script>
+	var span = document.querySelector('.con3');
+	var bg = document.querySelector('#bg');
+	var dj = document.querySelector('#dj');
+	var text = document.querySelector('#dj form .text');
+	var x = document.querySelector('#dj p span');
+	var button = document.querySelector('.con2 ul li');
+	for (var i = 0; i < button.length; i++) {
+		button[i].onclick=function(){
+			button[i].className=''
+		}
+		alert('sss')
+		button[this].className='select';
+	}
+
+	span.onclick=function(){
+		bg.style.display="block";
+		dj.style.display="block";
+	}
+	text.onclick=function(){
+		text.value="";
+	}
+	x.onclick=function(){
+		bg.style.display="none";
+		dj.style.display='none';
+	}
+</script>
+</html>

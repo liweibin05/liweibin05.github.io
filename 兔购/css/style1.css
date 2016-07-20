@@ -1,0 +1,209 @@
+.wrap{
+	max-width: 750px;
+	width: 100%;
+	position: relative;
+}
+.heard{
+	max-width: 750px;
+	width: 100%;
+	background-image:url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	position: relative;
+	padding-top:6.3559%;
+	padding-bottom: 6.3559%; 
+}
+.heard .div1{
+	width:3.466%;
+	left: 5%;
+	top: 5%;
+	position: absolute;
+}
+.heard .div1 img{
+	width: 100%;
+}
+.heard p{
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+.heard .p1{
+	margin-top:132px; 
+}
+.heard .p2{
+	margin-bottom: 132px;
+	border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heard .p1{
+	margin-top:17.7542%; 
+}
+.heard .p1 img{
+	padding-top:10px;
+	margin-right: 10px; 
+}
+#img{
+	width: 23.6%; 
+	position: absolute;
+	top: 33%;
+	left: 38%;
+}
+#img img{
+	width: 100%;
+}
+.content {
+	width: 100%;
+}
+.content .con1{
+	margin-top: 114px;
+	text-align: center;
+	font-size: 30px;
+}
+.content .con1 span{
+	display: inline-block;
+	margin-bottom: 10px; 
+	background: #c3ad88;
+	width: 7.710%;
+	height: 3px;
+	margin-right: 30px;
+}
+.content .con2{	
+	padding-top:30px; 
+	width: 580px;
+	height: 380px;
+	margin: auto;
+}
+.select{
+	border: 1px solid #ed5410;
+	color: #ed5410;
+}
+.content .con2 ul{
+	overflow: hidden;
+}
+.content .con2 ul li{
+	float: left;
+	line-height: 135px;
+	text-align: center;
+	font-size: 20px;
+	border:2px solid green;
+	border-radius: 10px;
+	margin-right: 25px;
+	margin-top: 25px;
+	width: 172px;
+}
+.content .con2 ul li em{
+	font-size: 36px;
+}
+.content .con3{
+	text-align: center;
+}
+.content .con3 span{
+	display: inline-block;
+	width: 190px;
+	background: #c3ad88;
+	font-size:36px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	cursor: pointer;
+}
+.foot{
+	padding-top: 173px;
+	padding-bottom:30px; 
+	width: 100%;
+	text-align: center;
+}
+.foot span{
+	font-size: 36px;
+}
+.foot img{
+	margin-right: 20px;
+	margin-top:10px; 
+}
+#bg{
+	display: none;
+	z-index: 5;
+	width: 100%;
+	height: 1331px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background: black;
+	opacity: 0.5;
+}
+#dj{
+display: none;
+text-align: center;
+padding:20px; 
+background: white;
+width: 652px;
+height: 397px;
+border-radius: 10px;
+position: absolute;
+left: 15%;
+z-index: 9999;
+margin-right: 356px;
+bottom: 198.5px;
+top: 30%;
+}
+#dj p{
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	line-height: 80px;
+}
+#dj p span{
+	display: inline-block;
+	position: absolute;
+	font-size: 50px;
+	color: #ccc;
+	left:0px; 
+}
+#dj form input{
+	
+	width: 564px;
+	height: 91px;
+	border: 1px solid;
+	border-radius: 6px;
+	margin-top: 20px;
+	
+}
+#dj form .text{
+	font-size: 36px;
+	opacity: 0.5;
+	text-indent: 15px;
+}
+#dj form .btn{
+	text-align: center;
+	font-size: 36px;
+	color: white;
+	background: green;
+}
+
