@@ -2,20 +2,22 @@ html{
 	font-size: 100px;
 }
 .wrap{
-	width: 7.5rem;
+	max-width: 7.5rem;
+	width: 100%;
 	position: relative;
 }
 .heard{
-	width: 6.86rem;
+	max-width: 6.86rem;
+	width: 100%;
 	height: 4.06rem;
 	padding:0.32rem; 
-	border: 0.01rem solid;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 	background-size:100%;
 	position: relative; 
 }
 .heard .img{
+	width: 2.6666%;
 	position: absolute;
 	left: 0.32rem;
 	top: 0.32rem;
@@ -37,26 +39,119 @@ html{
 }
 .heard .p3 img{
 	margin:0.1rem 0.05rem;
+	width: 2.6666%;
 }
 #img{
 	position: absolute;
 	left: 2.76rem;
 	top: 3.7rem;
+	width: 23.6%;
 }
+#img img{width: 100%;}
 .content{
 	width: 6.5rem;
 	padding:0.5rem;
-	border: 0.01rem solid; 
 }
 .content p{
 	margin-top: 0.9rem;
 	text-align: center;
 	font-size: 0.26rem;
 }
-.content span{
+.content .span1{
 	margin-bottom:0.09rem;   
 	display: inline-block;
 	width: 0.7rem;
 	height: 0.02rem;
 	background: #c3ad88;
+	margin-right: 0.05rem;
 }
+.content .span2{
+	margin-bottom:0.09rem;   
+	display: inline-block;
+	margin-left: 0.05rem;
+	width: 0.7rem;
+	height: 0.02rem;
+	background: #c3ad88;
+}
+.content ul{
+	padding:0 0.35rem;
+	overflow: hidden;
+}
+.content ul li{
+	border-radius: 0.08rem;
+	font-size: 0.36rem; 
+	border: 0.02rem solid #6ab439;
+	float: left;
+	line-height: 1.38rem;
+	margin-right: 0.11rem;
+	margin-top: 0.11rem;
+	width: 1.82rem;
+	text-align: center;
+}
+.content ul li span{
+	font-size: 0.2rem;
+}
+.content .div1{
+	margin-top:0.36rem; 
+	text-align: center;
+}
+.content .div1 span{
+	display: inline-block;
+	width: 1.82rem;
+	background: #c3ad88;
+	font-size: 0.33rem;
+	color: white;
+	border-radius: 0.12rem;
+}
+.foot{
+	margin-top: 1.66rem;
+	margin-bottom: 0.44rem;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.foot img{
+	width: 3.2%;
+}
+@media screen and (min-width: 640px) and (max-width: 750px){
+	html{
+		font-size: 80px;
+	}
+}
+@media screen and (min-width: 412px) and (max-width: 640px){
+	html{
+		font-size: 56px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 375px){
+	html{
+		font-size: 50px;
+	}
+	.foot{
+		margin-top:0.88rem; 
+	}
+}
+@media screen and (max-width: 320px){
+	html{
+		font-size: 42.5px;
+	}
+	.content ul{
+		padding: 0 0.34rem;
+	}
+	.content ul li{
+		border: 1px solid #6ab439;
+		margin-right: 0.1rem;
+	}
+	.heard{
+		height: 3.06rem;
+	}
+	.heard .p2{
+	margin-top: 0.82rem;
+	}
+	#img{
+		top: 2.7rem;
+	}
+	.content p{
+		margin-top: 0.6rem;
+	}		
+}
+
