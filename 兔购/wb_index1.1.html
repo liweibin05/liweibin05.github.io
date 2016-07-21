@@ -9,6 +9,14 @@
 </head>
 <body>
 	<div class="wrap">
+	<div id="bg"></div>
+	<div id="dj">
+	<p><span>X</span>自定义金额</p>
+	<form action="">
+		<input class="text" type="text" placeholder="金额(元)|可输入1-200">
+		<input class="btn" type="submit" value="赞赏">
+	</form>	
+	</div>
 		<div class="heard">
 			<img src="img/h1.png" alt="" class="img">
 			<p class="p1">赞赏</p>
@@ -35,4 +43,28 @@
 		<div class="foot"><img src="img/foot.png" alt="">匿名赞赏</div>
 	</div>
 </body>
+<script>
+		var	bg =document.querySelector('#bg');
+		var winH = document.body.offsetHeight;
+		var div1 = document.querySelector('.div1');
+		var span = document.querySelector('#dj p span');
+		var dj = document.querySelector("#dj");
+
+		span.onclick=function(){
+			bg.style.display='none';
+			dj.style.display='none';
+		}
+		div1.onclick=function(){
+			bg.style.display='block';
+			dj.style.display='block';
+		}
+
+
+
+
+		bg.style.height=winH+"px";
+		window.onresize=function(){
+			bg.style.height=winH+"px";
+		}
+</script>
 </html>

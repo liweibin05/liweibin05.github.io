@@ -5,6 +5,54 @@ html{
 	max-width: 7.5rem;
 	width: 100%;
 	position: relative;
+	padding-bottom: 0.2rem;
+}
+#bg{
+	display: none;
+	z-index: 9;
+	position: absolute;
+	width: 100%;
+	background: black;
+	opacity: 0.5;
+	left: 0;
+	top: 0;
+}
+
+
+#dj{
+	display: none;
+	z-index: 10;
+	top: 3.05rem;
+	left: 0.5rem;
+	position: absolute;
+	width: 6.5rem;
+	height: 3.79rem;
+	text-align: center;
+	background: white;
+	border-radius: 10px;
+}
+#dj form input{
+	width: 5.66rem;
+	height: 0.9rem;
+	border-radius: 5px;
+	border: 1px solid;
+	margin-top: 0.22rem;
+	font-size: 0.26rem;
+}
+#dj form .btn{
+	background: #6ab439;
+	color: white;
+}
+#dj p{
+	text-align: center;
+	font-size: 0.36rem;
+	line-height: 1.1rem;
+	position: relative;
+}
+#dj p span{
+	display: inline-block;
+	position: absolute;
+	left: 0.27rem;
 }
 .heard{
 	max-width: 6.86rem;
@@ -80,7 +128,7 @@ html{
 .content ul li{
 	border-radius: 0.08rem;
 	font-size: 0.36rem; 
-	border: 0.02rem solid #6ab439;
+	border: 1px solid #6ab439;
 	float: left;
 	line-height: 1.38rem;
 	margin-right: 0.11rem;
@@ -121,25 +169,32 @@ html{
 	html{
 		font-size: 56px;
 	}
+
 }
 @media screen and (min-width: 320px) and (max-width: 375px){
 	html{
 		font-size: 50px;
 	}
 	.foot{
-		margin-top:0.88rem; 
+		margin-top:0.9rem; 
 	}
 }
 @media screen and (max-width: 320px){
 	html{
-		font-size: 42.5px;
+		font-size: 44px;
+	}
+	.foot{
+		margin-top:1.48rem; 
 	}
 	.content ul{
-		padding: 0 0.34rem;
+		padding:0.6rem 0.35rem; 
 	}
 	.content ul li{
-		border: 1px solid #6ab439;
 		margin-right: 0.1rem;
+	}
+
+	#dj{
+		left: 0.38rem;
 	}
 	.heard{
 		height: 3.06rem;
