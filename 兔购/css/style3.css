@@ -1,0 +1,240 @@
+html{
+	font-size: 100px;
+}
+.wrap{
+	max-width: 7.50rem;
+	width: 100%;
+	padding-bottom: 0.3rem;
+}
+.heard{
+	width: 100%;
+	background-image:url(../img/grbg.png);
+	background-repeat: no-repeat;
+	background-size:100%;   
+	padding-bottom:0.3rem; 
+}
+.heard .nav ul{
+	overflow: hidden;
+	padding: 0.26rem;
+}
+.heard .nav p img{
+	width: 24.1333%;
+}
+.fl{float: left;}
+.fr{float: right;}
+.heard .nav .left img{
+	width: 0.2rem;
+}
+.heard .nav .right{
+	text-align: center;
+	width: 1.20rem;
+	font-size:0.26rem;
+	color: #5bc662;
+	line-height: 0.36rem;
+	border-radius: 0.2rem;
+	border:1px solid #5bc662;  
+}
+.heard .nav p{
+	text-align: center;
+}
+.heard .nav .p1{
+	font-size: 0.36rem;
+	color: rgba(255,255,255,0.65);
+	margin: auto;
+	width: 6.22rem;
+	line-height: 1.3rem;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.heard .nav	.p2{
+	line-height: 1rem;
+	font-size: 0.32rem;
+	color: rgba(255,255,255,0.5);
+}
+.heard .nav .p2 span{
+	display: inline-block;
+	width: 3.62rem;
+	font-size: 0.26rem;
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+}
+
+.content{
+	width:100%; 
+}
+.content .con1{
+	padding: 0.2rem 0.3rem;
+	border-top:1px solid #c5c4c4;
+	border-bottom:1px solid #c5c4c4;
+	overflow: hidden;
+}
+.content .p3{
+	padding-left: 0.3rem;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+}
+.content .left{
+	width: 1.45rem;
+	height: 1.42rem;
+}
+.content .left img{
+	width: 100%;
+}
+.content .right{
+	width: 5.2rem;
+	height: 1.42rem; 
+}
+.content .con1 ul{
+	overflow: hidden;
+}
+.content .con1 ul li{
+	font-size: 0.26rem;
+}
+.content .con1 p{
+	line-height: 0.3rem;
+	font-size: 0.22rem;
+	color: #a9a9a9;
+}
+.content .con1 .ul2{
+	margin-top: 0.5rem;
+}
+.content .con1 .ul2 span{
+	margin-left:0.3rem; 
+}
+.content .con1 .ul2 img{
+	margin:5px 5px;
+	width: 25.26%;
+}
+.content .con1 .ul2 span img{
+	width: 8.26%;
+}
+@media screen and (min-width: 600px) and (max-width: 750px){
+	html{
+		font-size: 80px;
+	}
+}
+@media screen and (min-width: 550px) and (max-width: 600px){
+	html{
+		font-size: 74px;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 550px){
+	html{
+		font-size: 66px;
+	}
+}
+@media screen and (min-width: 490px) and (max-width: 500px){
+	html{
+		font-size: 64px;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 490px){
+	html{
+		font-size: 63px;
+	}
+}
+
+@media screen and (min-width: 470px) and (max-width: 480px){
+	html{
+		font-size: 62px;
+	}
+}
+
+@media screen and (min-width: 460px) and (max-width: 470px){
+	html{
+		font-size: 60px;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 460px){
+	html{
+		font-size: 59px;
+	}
+}
+@media screen and (min-width: 440px) and (max-width: 450px){
+	html{
+		font-size: 58px;
+	}
+}
+@media screen and (min-width: 430px) and (max-width: 440px){
+	html{
+		font-size: 57px;
+	}
+}
+@media screen and (min-width: 420px) and (max-width: 430px){
+	html{
+		font-size: 56px;
+	}
+}
+
+@media screen and (min-width: 410px) and (max-width: 420px){
+	html{
+		font-size: 54px;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 410px){
+	html{
+		font-size: 53.5px;
+	}
+}
+@media screen and (min-width: 390px) and (max-width: 400px){
+	html{
+		font-size: 53px;
+	}
+}
+@media screen and (min-width: 380px) and (max-width: 390px){
+	html{
+		font-size: 52px;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 380px){
+	html{
+		font-size: 51px;
+	}
+}
+@media screen and (min-width: 370px) and (max-width: 375px){
+	html{
+		font-size: 50px;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 370px){
+	html{
+		font-size: 49px;
+	}
+}
+@media screen and (min-width: 350px) and (max-width: 360px){
+	html{
+		font-size: 48px;
+	}
+}
+@media screen and (min-width: 340px) and (max-width: 350px){
+	html{
+		font-size: 47px;
+	}
+}
+@media screen and (min-width: 330px) and (max-width: 340px){
+	html{
+		font-size: 46px;
+	}
+	.content .con1 .ul2 {
+    margin-top: 0.2rem;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 330px){
+	html{
+		font-size: 42px;
+	}
+	.content .con1 .ul2 {
+    margin-top: 0.3rem;
+	}
+}
+
+@media screen and (max-width: 320px){
+	html{
+		font-size: 43px;
+	}
+	.content .con1 .ul2 {
+    margin-top: 0.3rem;
+	}
+}
