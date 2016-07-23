@@ -6,6 +6,7 @@ html{
 	width: 100%;
 	position: relative;
 	padding-bottom: 0.2rem;
+	margin:auto; 
 }
 #bg{
 	display: none;
