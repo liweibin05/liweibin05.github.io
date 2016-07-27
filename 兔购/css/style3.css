@@ -30,10 +30,10 @@ html{
 	text-align: center;
 	width: 1.20rem;
 	font-size:0.26rem;
-	color: #5bc662;
+	color: rgba(255,255,255,0.65);
 	line-height: 0.36rem;
 	border-radius: 0.2rem;
-	border:1px solid #5bc662;  
+	border:1px solid rgba(255,255,255,0.65);  
 }
 .heard .nav p{
 	text-align: center;
