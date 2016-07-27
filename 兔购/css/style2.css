@@ -62,7 +62,7 @@
 .content .con1 .bg .p2{
 	text-align: center;
 	font-size: 12px;
-	color: rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.75);
 	z-index: 9;
 }
 .content .con1 .bg2{
@@ -108,4 +108,45 @@
 	margin-right: 12%;      
 	color: #c3ad88;
 }
+@media screen and (min-width: 500px) and (min-width: 600px){
+	.heard div span{
+	font-size: 26px;
+	line-height:30px;
+	}
+	.content .con1 .bg .p1{
+	line-height: 30px;
+	font-size: 26px;
+	}
+	.content .con1 .bg .p2{
+	font-size: 22px;
+	}
+
+	.content .con1 .bg2 .p1{
+	font-size: 26px;
+	}
+	.foot ul li{	
+	font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 600px) and (min-width: 700px){
+	.heard div span{
+	font-size: 36px;
+	line-height:40px;
+	}
+	.content .con1 .bg .p1{
+	line-height: 40px;
+	font-size: 36px;
+	}
+	.content .con1 .bg .p2{
+	font-size: 26px;
+	}
+	.content .con1 .bg2 .p1{
+	font-size: 36px;
+	}
+	.foot ul li{	
+	font-size: 26px;
+	}
+}
+
 

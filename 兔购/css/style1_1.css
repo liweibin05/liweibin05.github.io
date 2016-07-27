@@ -265,7 +265,7 @@ html{
 
 @media screen and (min-width: 410px) and (max-width: 420px){
 	html{
-		font-size: 58px;
+		font-size: 55px;
 	}
 }
 @media screen and (min-width: 400px) and (max-width: 410px){
@@ -280,7 +280,7 @@ html{
 }
 @media screen and (min-width: 380px) and (max-width: 390px){
 	html{
-		font-size: 52px;
+		font-size: 51px;
 	}
 }
 
@@ -344,7 +344,7 @@ html{
 }
 @media screen and (max-width: 320px){
 	html{
-		font-size: 44px;
+		font-size: 42.5px;
 	}
 	.foot{
 		margin-top:1.48rem; 
@@ -353,7 +353,7 @@ html{
 		padding:0.6rem 0.35rem; 
 	}
 	.content ul li{
-		margin-right: 0.1rem;
+		margin-right: 0.099rem;
 	}
 
 	#dj{
