@@ -1,6 +1,7 @@
 .wrap{
 	width: 100%;
 	position: relative;
+	padding-bottom:17%;  
 }
 .heard{
 	width: 100%;
@@ -18,10 +19,31 @@
 	text-align: center;
 	font-size: 16px;
 	line-height: 26px;
-	color: #99886b;
-	border-right: 2px solid #99886b;
+	color: #99886b;	
 	border-radius: 6px;
 }
+.heard div .span1{
+	background: #4b3b2f;
+	border-right: 2px solid #99886b;
+}
+.heard div .span2{
+	background: #403228;
+}
+
+.heard img{
+	position: absolute;
+	right: 4%;
+	top: 1.5%;
+	width:5.2%;
+}
+
+.span1_1{
+	border-right: 2px solid #99886b;
+}
+.span1_2{
+	border-left: 2px solid #99886b;
+}
+
 .content{
 	width: 96%;
 	padding: 2%; 
@@ -45,12 +67,6 @@
 	position: absolute;
 }
 
-
-
-
-
-
-
 .content .con1 .bg .p1{
 	text-align: center;
 	line-height: 20px;
@@ -67,7 +83,7 @@
 }
 .content .con1 .bg2{
 	left: 0;
-	top: -20%;
+	top: 0;
 	width: 100%;
 	z-index: 8;
 	background: black;
@@ -85,6 +101,7 @@
 	width: 100%;
 	background: #48382b;
 	padding-top: 2%;
+	padding-bottom: 2%;
 	position: fixed;
 	bottom: 0;
 	z-index: 999;

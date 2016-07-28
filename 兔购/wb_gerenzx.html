@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style3.css">
+	<link rel="stylesheet" href="css/wb_style3.css">
 </head>
 <body>
 	<div class="wrap">
@@ -81,18 +81,21 @@
 </body>
 <script>
 	var gz = document.querySelector('.ul1 .right');
+	var span = document.querySelector('.p2 span')
 	var bol = false;
 		bol=true;
 	gz.onclick=function(){		
 		if (bol) {
 			gz.style.color="#5bc662";
 			gz.style.border="1px solid #5bc662";
+			span.innerHTML='关注　7';
 			gz.innerHTML="取消关注";
 			bol=false;
 		}else {
 			gz.style.color="rgba(255,255,255,0.65)";
 			gz.style.border="1px solid rgba(255,255,255,0.65)";
 			gz.innerHTML="+关注";
+			span.innerHTML='关注　6';
 			bol=true;
 		}	
 	}
