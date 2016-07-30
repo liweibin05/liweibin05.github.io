@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>ckplayer简单调用演示</title>
+<style>
+	*{margin: 0;padding:0; }
+	
+	.heard{
+		z-index: 9999;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		display: none;
+		background: rgba(255,255,255,0.5);
+		
+	}
+
+	p{
+		line-height: 50px;
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		position: relative;
+	}
+	.foot{
+		z-index: 999;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 30px;
+		background: rgba(255,255,255,0.5);
+	}
+	span{
+		display: inline-block;
+		font-size: 36px;
+		color: white;
+		left: 30px;
+		top: 3px;
+		position: absolute;
+	}
+	#a1{
+		position: relative;
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="heard"><p><span><</span>精彩回顾</p></div>
+	<div id="a1"></div>
+	<!-- <div class="foot"></div> -->
+</div>
+
+
+
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		f:'guide_video.mp4',
+		c:0,
+		b:1,
+		i:'temp/hsiping1.gif',
+		k:'32|63',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
+		n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
+		};
+	//var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+	//CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var span = document.querySelector('span');
+	var heard = document.querySelector('.heard');
+	var w = parseInt(window.innerWidth);
+	var h = parseInt(window.innerHeight);
+	var video=['guide_video.mp4->video/mp4'];
+	var support=['iPad','iPhone','ios','android+false','msie10+false'];
+	CKobject.embedHTML5('a1','ckplayer_a1',w,h,video,flashvars,support);
+	span.onclick=function(){
+		window.location.href="demo3.html";
+	}
+	
+	a1.onclick=function(){
+		
+		heard.style.display="block";
+		var timer = setInterval(function(){
+			heard.style.display="none";
+		},3000)
+	}
+	
+		
+  </script>
+</body>
+</html>

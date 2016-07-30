@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ckplayer简单调用演示</title>
+</head>
+<body>
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var w = parseInt(window.innerWidth);
+	var h = parseInt(window.innerHeight);
+	var flashvars={
+		f:'guide_video.mp4',
+		c:0,
+		b:1,
+		i:'temp/hsiping1.gif',
+		k:'32|63',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
+		n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
+		};
+	var video=['guide_video.mp4->video/mp4'];
+	CKobject.embed('ckplayer/ckplayer.swf','a1','ckplayer_a1','w','h',true,flashvars,video)	
+	
+</script>
+</body>
+</html>
