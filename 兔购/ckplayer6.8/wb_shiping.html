@@ -74,7 +74,8 @@
 	span.onclick=function(){
 		window.location.href="wb_index2.html";
 	}
-	a1.onclick=function(){		
+	a1.onclick=function(){	
+		onclick='this.play()'	
 		heard.style.display="block";
 		var timer = setInterval(function(){
 			heard.style.display="none";
@@ -82,34 +83,7 @@
 	}
 	
 
-	var flag;
-		var old_flag;
-		var obj;
-		var current_time;
-		//切换频道
-		function changChl(url){
-			obj = $("#myVideo")[0];
-			current_time = obj.currentTime;
-			if(url != obj.src) {
-					obj.currentTime = parseFloat(current_time);
-					var new_url = url;
-					obj.src = new_url;
-					obj.autoplay = "true";
-					checkduration();
-				}
-		}
-		
-		function checkduration() {
-				if(4 == obj.readyState) {
-					obj.currentTime=current_time;
-					obj.play();
-					clearInterval(flag);
-					
-				} else {
-					flag = setInterval(checkduration,1000);
-					//clearInterval(flag); //解决IOS死循环问题 
-				}
-			}
+
 		
   </script>
 </body>
