@@ -81,6 +81,35 @@
 		},3000)
 	}
 	
+
+	var flag;
+		var old_flag;
+		var obj;
+		var current_time;
+		//切换频道
+		function changChl(url){
+			obj = $("#myVideo")[0];
+			current_time = obj.currentTime;
+			if(url != obj.src) {
+					obj.currentTime = parseFloat(current_time);
+					var new_url = url;
+					obj.src = new_url;
+					obj.autoplay = "true";
+					checkduration();
+				}
+		}
+		
+		function checkduration() {
+				if(4 == obj.readyState) {
+					obj.currentTime=current_time;
+					obj.play();
+					clearInterval(flag);
+					
+				} else {
+					flag = setInterval(checkduration,1000);
+					//clearInterval(flag); //解决IOS死循环问题 
+				}
+			}
 		
   </script>
 </body>
