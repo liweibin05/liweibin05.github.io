@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.div1{
+		background: black;
+		
+		position: absolute;
+		top: 250px;
+		left: 150px;
+		/*transform: rotate(30deg) scale(1.5);
+		*/
+		
+		animation:move 2s forwards ;
+		}
+	.wrap{
+		position: relative;
+		border:1px solid;
+		
+	}
+	@keyframes move{
+		from{
+			transform: rotate(0deg) scale(0);
+		}
+		to{
+			transform: rotate(360deg) scale(2);
+		}
+	}	
+		</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="div1"><img src="img/shoujisp.png" alt=""></div>
+</div>
+	
+
+</body>
+<script src="jquery-3.0.0.min.js"></script>
+<script>
+	var div1 = $('.div1');
+	$('.div1 img').attr("src","img/shouji.png")
+</script>
+</html>

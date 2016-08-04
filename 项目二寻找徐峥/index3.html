@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>Document</title>
+	<style>
+
+	.wrap{
+		width: 100%;
+		position: relative;
+	}
+	.wrap img{
+		width: 100%;
+	}
+ .div1{
+		width: 76.26%;
+		top: 30%;
+		left: 15%;
+		position: absolute;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="img/bg3.png" alt="">
+		<div class="div1"><img src="img/cr3.png" alt=""></div>
+	</div>
+	
+</body>
+<script>
+	yemian2();
+	function yemian2(){
+		var div = document.querySelector('.div1');
+	var img = document.querySelector('.div1 img');
+		var x = 80;
+		var y = 95;
+		var index = 0;
+		var j = 0;
+		var arr = ["img/cr3_3.png","img/cr3.png","img/cr3_3.png","img/cr3.png"];
+	var timer=setInterval(function(){		
+		x--;
+		y--;
+		if (x==15||y==30) {
+			clearInterval(timer)
+			var timer2=setInterval(function(){
+				index++;
+				j++;
+				if (index>3) {
+					index=0;
+				}
+				img.src=arr[index];	
+				if (j>10) {
+					clearInterval(timer2);
+					var timer3 = setInterval(function(){
+						x--;
+						y--;
+						if (x==-80||y==-95) {
+							clearInterval(timer3)
+						}
+						div.style.left=x+"%";
+						div.style.top=y+"%";
+					},30)	
+				}										
+			},300)		
+		}
+		div.style.left=x+"%";
+		div.style.top=y+"%";
+	},30)
+	}
+	
+		
+	
+	
+	
+
+</script>
+</html>
