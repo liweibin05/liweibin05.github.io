@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding: 0 }
+	.index1{
+			width: 100%;
+			position: relative;
+		}
+		.index1 img{
+			width: 100%
+		}
+		#wrap{
+			top: 0;
+			left: 0;
+			width: 100%;
+			position: absolute;
+			display: none;
+		}
+		#wrap img{
+			width: 100%
+		}
+		.index1 .con{
+			width: 55.2269%;
+			position: absolute;
+			top:33%;
+			left: 22%;
+		}
+		.index1 .text{
+			position: absolute;
+			transform-origin:38.9240% 50.9138% ;
+			width: 50.7675%;
+			top:30%;
+			left: 29%;
+			transition: 1s;
+			animation: d1 2s linear;
+		}
+		#text{
+		display: none;
+		}
+		#th{
+		width: 100%;
+		position: absolute;
+		top: 20%;
+		line-height:24px;
+		color: white;
+		text-align: center; 
+	}
+		@keyframes d1{
+		from{
+			transform:rotate(0deg);
+		}
+		to{
+			transform:rotate(360deg);
+		}
+	}
+	.super{
+		position: absolute;
+		left: 18%;
+		top: 33%;
+		display: none;
+	}
+	.fly{
+		animation: super 5s;
+	}
+	.heard{
+		background-size: 100% 100%;
+		background-image: url(img/super_body1.png);
+		width: 250px;
+		height: 180px;
+		animation: heard 1s steps(1) infinite;
+	}
+	@keyframes heard{
+		0%{
+			
+			background-image:url(img/super_body1.png);
+		}
+		33%{
+			background-image:url(img/super_body2.png);
+		}
+		66%{
+			background-image:url(img/super_body3.png);
+		}
+		100%{
+			background-image:url(img/super_body1.png);
+		}
+	}
+	@keyframes super{
+		0%{
+			transform: translate3d(300px,400px,0);
+		}
+		33%{
+			transform: translate3d(0,0,0);
+		}
+		66%{
+			transform: translate3d(0,0,0);
+		}
+		100%{
+			transform: translate3d(-300px,-400px,0);
+		}
+	}
+	body{perspective:1000px;}
+
+	#sp8_1{display: none;}
+		.wrap{
+			width: 100%;
+			position: relative;
+			display: none;
+		}
+		.wrap .div2{
+			position: absolute;
+			top: 33%;
+			left: 35.5%;
+			width: 30.25%;
+			display: block;		
+		}
+		.d2move{
+		animation: move 1s linear forwards;
+		}
+		.wrap .div3{
+			position: absolute;
+			top: 32%;
+			left: 34%;
+			width: 33.25%;
+			display: none;
+		}
+		.wrap img{
+			width: 100%;
+		}
+		.syxq{
+			display: none;
+		}
+		.xqmove{
+			animation: xq 1.5s linear infinite alternate;
+		}
+		.xq{
+			width: 8%;
+			position: absolute;
+			top: 29%;
+			left: 80%;
+		}	
+		.xq2{
+			width: 12%;
+			position: absolute;
+			top: 30%;
+			left: 5%;
+		}
+		.xq3{
+			width: 8%;
+			position: absolute;
+			top: 70%;
+			left: 45%;
+		}
+		.xq4{
+			width: 10%;
+			position: absolute;
+			top: 25%;
+			left: 41%;
+			opacity: 0.5;
+		}
+		.xq5{
+			width: 8%;
+			position: absolute;
+			top: 38%;
+			left: 44%;
+		}
+		.xq6{
+			width: 12%;
+			position: absolute;
+			top: 60%;
+			left: 14%;
+			opacity: 0.5;
+		}
+		.xq7{
+			width: 15%;
+			position: absolute;
+			top: 65%;
+			left: 76%;
+			opacity: 0.5;
+		}
+		.xq8{
+			width: 15%;
+			position: absolute;
+			top: 40%;
+			left: 75%;
+			opacity: 0.5;
+		}
+		.sp{
+			display: none;
+		}
+		.sjsp1{
+			background-image: url(img/sjsp1.png);
+			background-size: 100% 100%;
+			width: 24.25%;
+			height: 11.1267%;
+			position: absolute;
+			top: 60%;
+			left: 43%;
+			animation: sjsp1 10s 5s both;
+		}
+		.sjsp2{
+			background-image: url(img/sjsp2.png);
+			background-size: 100% 100%;
+			width: 19.52%;
+			position: absolute;
+			height: 14.9430%;
+			top: 56.2%;
+			left: 34%;
+			animation: sjsp2 10s 5s both;
+			
+		}
+		.sjsp3{
+			width: 17.5%;
+			height: 20.2908%;
+			background-image: url(img/sjsp3.png);
+			background-size: 100% 100%;
+    		position: absolute;
+   	 		top: 42%;
+    		left: 44%;
+    		animation: sjsp3 10s 5s both;
+    		
+		}
+		.sjsp4{
+			background-image: url(img/sjsp4.png);
+			background-size: 100% 100%;
+			width: 19%;
+			height: 20.8905%;
+    		position: absolute;
+    		top: 41.5%;
+    		left: 34%;
+    		animation: sjsp4 10s 5s both;
+		}
+		.sjsp5{
+			background-image: url(img/sjsp5.png);
+			background-size: 100% 100%;
+			width: 17.35%;
+			height: 15.4917%;
+    		position: absolute;
+    		top: 49.7%;
+    		left: 50%;
+    		animation: sjsp5 10s 5s both;
+		}
+		.sjsp6{
+			background-image: url(img/sjsp6.png);
+			background-size: 100% 100%;
+			width: 24.18%;
+			height: 17.2248%;
+    		position: absolute;
+    		top: 37%;
+    		left: 43%;
+    		animation: sjsp6 10s 5s both;
+    		
+		}
+		.sjsp7{
+			height: 16.3268%;
+			width: 22.25%;
+   	 		position: absolute;
+    		top: 32%;
+    		left: 34%;
+    		background-image: url(img/sjsp7.png);
+    		background-size:100% 100%; 
+    		animation: sjsp7 10s 5s both;	
+		}
+		.sjsp8{
+			width: 20.6%;
+    		position: absolute;
+    		top: 32%;
+    		left: 46.5%;
+    		animation: sjsp8 10s 5s both;
+    		background-image: url(img/sjsp8.png);
+			background-size: 100% 100%;
+    		height: 16.4197%;
+		}
+
+		/*/*手机碎片分散*/
+		@keyframes sjsp1{
+		0%{
+			transform: translate3d(0,0,0) scale(1);	
+		}
+		30%{background-image: url(img/sjsp1.png);}
+		33%{
+			transform: translate3d(110px,-60px,0) scale(1);
+			background-image: url(img/sjsp1_1.png);
+		}
+		66%{
+			transform: translate3d(110px,-60px,0) scale(1);
+			background-image: url(img/sjsp1_1.png);
+		}
+		100%{transform: translate3d(118px,-202px,0) scale(0);}
+	}	
+		@keyframes sjsp2{
+		0%{
+			transform: translate3d(0,0,0) rotate(0deg);	
+		}
+		30%{background-image: url(img/sjsp2.png);}
+		33%{
+			transform: translate3d(88px,60px,0) rotate(42deg) scale(1);
+			background-image: url(img/sjsp2_1.png);
+		}
+		66%{
+			transform: translate3d(88px,60px,0) rotate(42deg) scale(1);
+			background-image: url(img/sjsp2_1.png);
+		}
+		100%{
+			transform: translate3d(26px,58px,0) rotate(42deg) scale(0);
+			background-image: url(img/sjsp2_1.png);
+		}
+	}	
+		@keyframes sjsp3{
+		0%{
+			transform: translate3d(0,0,0) scale(1);	
+		}
+		30%{background-image: url(img/sjsp3.png);}
+		33%{
+			transform: translate3d(46px,-23px,0) scale(0.6);
+			background-image: url(img/sjsp3_1.png);		
+		}
+		66%{
+			transform: translate3d(46px,-23px,0) scale(0.6);
+			background-image: url(img/sjsp3_1.png);		
+		}
+		100%{
+			transform: translate3d(-26px,-145px,0) scale(0);
+			background-image: url(img/sjsp3_1.png);		
+		}
+	}	
+		@keyframes sjsp4{
+		0%{
+			transform: translate3d(0,0,0) rotate(0deg) scale(1);
+		}
+		30%{background-image: url(img/sjsp4.png);}
+		33%{
+			transform: translate3d(-100px,0,0) rotate(60deg) scale(1);
+			background-image: url(img/sjsp4_1.png);
+		}
+		66%{
+			transform: translate3d(-100px,0,0) rotate(60deg) scale(1);
+			background-image: url(img/sjsp4_1.png);
+		}
+		100%{
+			transform: translate3d(-109px,-109px,0) rotate(60deg) scale(0);
+			background-image: url(img/sjsp4_1.png);
+		}
+	}	
+		@keyframes sjsp5{
+		0%{
+			transform: translate3d(0,0,0) scale(1);	
+		}
+		30%{background-image: url(img/sjsp5.png);}
+		33%{
+			transform: translate3d(-72px,0,0) scale(1.6);
+			background-image: url(img/sjsp5_1.png);	
+		}
+		66%{
+			transform: translate3d(-72px,0,0) scale(1.6);
+			background-image: url(img/sjsp5_1.png);	
+		}
+		100%{
+			transform: translate3d(-34px,-101px,0) scale(0);
+			background-image: url(img/sjsp5_1.png);	
+		}
+	}	
+		@keyframes sjsp6{
+		0%{
+			transform: translate3d(0,0,0) scale(1);	
+		}
+		30%{background-image: url(img/sjsp6.png);}
+		33%{
+			transform: translate3d(-100px,200px,0) scale(0.8);
+			background-image: url(img/sjsp6_1.png);		
+		}
+		66%{
+			transform: translate3d(-100px,200px,0) scale(0.8);
+			background-image: url(img/sjsp6_1.png);		
+		}
+		100%{
+			transform: translate3d(110px,148px,0) scale(0);
+			background-image: url(img/sjsp6_1.png);		
+		}
+	}	
+		@keyframes sjsp7{
+		0%{
+			transform: translate3d(0,0,0) rotate(0deg) scale(1);	
+		}
+		30%{background-image: url(img/sjsp7.png);}
+		33%{
+			transform: translate3d(93px,-56px,0) rotate(-45deg) scale(0.8);
+			background-image: url(img/sjsp7_1.png);		
+		}
+		66%{
+			transform: translate3d(93px,-56px,0) rotate(-45deg) scale(0.8);
+			background-image: url(img/sjsp7_1.png);		
+		}
+		100%{
+			transform: translate3d(140px,29px,0) rotate(-45deg) scale(0);
+			background-image: url(img/sjsp7_1.png);		
+		}
+	}	
+		@keyframes sjsp8{
+		0%{
+			transform: translate3d(0,0,0) rotate(0deg) scale(1);	
+		}
+		30%{background-image: url(img/sjsp8.png);	}
+		33%{
+			transform: translate3d(-146px,-59px,0) rotate(76deg) scale(1);
+			background-image: url(img/sjsp8_1.png);		
+		}
+		66%{
+			transform: translate3d(-146px,-59px,0) rotate(76deg) scale(1);
+			background-image: url(img/sjsp8_1.png);		
+		}
+		100%{
+			transform: translate3d(-135px,149px,0) rotate(76deg) scale(0);
+			background-image: url(img/sjsp8_1.png);		
+		}
+	}	
+		
+	/*星球晃动*/
+	@keyframes xq{
+		0%{
+			transform: translate3d(0,0,0);	
+		}
+		100%{
+			transform: translate3d(10px,10px,0);
+		}
+	}	
+		
+		@keyframes move{
+		from{
+			transform: rotate(0deg) scale(0);	
+		}
+		to{
+			transform: rotate(360deg) scale(1);		
+		}
+	}
+	.huadong{
+		display: none;
+	}
+	.txt{
+		bottom: 10%;
+		position: absolute;
+		color: white;
+		left: 32%;
+		/*animation:qd 1s infinite alternate; */ 		
+	}
+	.jt{
+		width: 6.7%;
+		bottom: 5%;
+		position: absolute;
+		left: 48%;
+		/* */
+	}
+	.qdmove{
+		animation:qd 1s infinite alternate;
+	}
+	@keyframes qd{
+		from{
+			transform: translate3d(0,0,0);	
+		}
+		to{
+			transform: translate3d(0,10px,0);		
+		}
+	}	
+	</style>
+</head>
+<body>
+<div class="index1">
+			<img src="img/bg.png" alt="">
+			<div class="con">
+				<img src="img/tx1.png" alt="">
+			</div>	
+			<div class="text"><img src="img/text.png" alt=""></div>
+	</div>
+	<div id="wrap">		
+		<img src="img/bg3.png" alt="">
+		<div id="th"></div>
+		<div id="text" style="display: none;">
+			<p>公元9025年</p>
+		  <p>外星人为了争夺</p>
+		<p>封印在vivo手机中的神秘能量</p>	
+	  		<p>发起宇宙战乱</p>
+	   <p>超人徐峥为了保卫神秘能量</p>
+	    <p>带着手机来到浩瀚宇宙中</p>
+	       <p>分身成为8个自己</p>
+	     <p>分别保卫8块手机碎片</p>
+	   <p>消失在太阳系的八大行星中</p>
+	    <p>据说找齐徐峥的8个分身</p>
+	   <p>就能启动神秘能量保护地球</p>
+	   			<p>...</p>	
+	   	</div>
+
+	   	<div class="super">
+	   		<div class="heard"></div>
+	   	</div>
+	</div>
+	<div class="wrap">
+		<img id="bg" src="img/bg3.png" alt="">	
+		<div class="div2"><img src="img/shouji.png" alt=""></div>
+		<div class="div3"><img src="img/shoujisp.png" alt=""></div>
+		<div class="syxq">
+			<div class="xq"><img src="img/xq.png" alt=""></div>
+			<div class="xq2"><img src="img/xq2.png" alt=""></div>
+			<div class="xq3"><img src="img/xq3.png" alt=""></div>
+			<div class="xq4"><img src="img/xq4.png" alt=""></div>
+			<div class="xq5"><img src="img/xq5.png" alt=""></div>
+			<div class="xq6"><img src="img/xq6.png" alt=""></div>
+			<div class="xq7"><img src="img/xq7.png" alt=""></div>
+			<div class="xq8"><img src="img/xq8.png" alt=""></div>
+		</div>
+		<div class="huadong">
+			<p class="txt">找齐徐峥 启动能量</p>
+			<p class="jt"><img src="img/jt.png" alt=""></p>
+		</div>		
+		<div class="sp">
+			<div class="sjsp1"></div>
+			<div class="sjsp2"></div>
+			<div class="sjsp3"></div>
+			<div class="sjsp4"></div>
+			<div class="sjsp5"></div>
+			<div class="sjsp6"></div>
+			<div class="sjsp7"></div>
+			<div class="sjsp8"></div>
+		</div>
+		
+	</div>
+</body>
+<script src="jquery-3.0.0.min.js"></script>
+<script>
+var index=0;
+var word=document.getElementById("text");
+var th=document.getElementById("th");
+//打字效果
+function qianzou(){	
+	var timer=setInterval(function(){
+		th.innerHTML = word.innerHTML.substring(0,index++); 
+			console.log(index);
+		if (index>=word.innerHTML.length) {
+			clearInterval(timer);
+			th.style.display="none";			
+			$('.super').fadeIn().addClass('fly');
+		}
+	},30);		
+	}
+	setTimeout(function(){
+ 		$('#wrap').fadeIn();
+		qianzou();		
+	},1000);
+	setTimeout(function(){
+		$('.index1').hide();
+		$('#wrap').hide();
+		$('.wrap').show();
+		$('.div2').addClass('d2move');
+		$('.div2').fadeOut(5000);	
+	},14000);
+ 	setTimeout(function(){
+		$('.div3').fadeIn(3000);
+		$('.div3').fadeOut(1000);
+ 	},17000)
+	setTimeout(function(){	
+		$('.sp').fadeIn(3000);
+		$('#bg').attr("src","img/bg5.png");
+		$('.syxq').fadeIn(3000);	
+	},18000)
+	setTimeout(function(){
+		$('.huadong').fadeIn();
+		$('.txt').addClass('qdmove');
+		$('.jt').addClass('qdmove');
+		$('.syxq div').addClass('xqmove');
+		
+	},33000)
+	
+</script>
+</html>

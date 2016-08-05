@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>Document</title>
 	<style>
-		.wrap{
+	*{padding: 0;margin:0; }
+		.index1{
 			width: 100%;
 			position: relative;
 		}
-		.wrap img{
+		.index1 img{
 			width: 100%
 		}
 		#wrap{
@@ -17,37 +18,36 @@
 			left: 0;
 			width: 100%;
 			position: absolute;
-			/*display: none;*/
+			display: none;
 		}
 		#wrap img{
 			width: 100%
 		}
-		.wrap .con{
+		.index1 .con{
 			width: 55.2269%;
 			position: absolute;
 			top:33%;
 			left: 22%;
 		}
-		.wrap .text{
+		.index1 .text{
 			position: absolute;
 			transform-origin:38.9240% 50.9138% ;
 			width: 50.7675%;
 			top:30%;
 			left: 29%;
 			transition: 1s;
-			animation: d1 1s linear;
+			animation: d1 2s linear;
 		}
 		#text{
 		display: none;
 		}
 		#th{
-		width: 50.3437%;
-		text-align: center;
+		width: 100%;
 		position: absolute;
 		top: 20%;
-		left: 23%;
+		line-height:24px;
 		color: white;
-		z-index: 999;
+		text-align: center; 
 	}
 		@keyframes d1{
 		from{
@@ -57,18 +57,62 @@
 			transform:rotate(360deg);
 		}
 	}
-
+	.super{
+		position: absolute;
+		left: 18%;
+		top: 33%;
+		display: none;
+	}
+	.fly{
+		animation: super 8s;
+	}
+	.heard{
+		background-size: 100% 100%;
+		background-image: url(img/super_body1.png);
+		width: 250px;
+		height: 180px;
+		animation: heard 1s steps(1) infinite;
+	}
+	@keyframes heard{
+		0%{
+			
+			background-image:url(img/super_body1.png);
+		}
+		33%{
+			background-image:url(img/super_body2.png);
+		}
+		66%{
+			background-image:url(img/super_body3.png);
+		}
+		100%{
+			background-image:url(img/super_body1.png);
+		}
+	}
+	@keyframes super{
+		0%{
+			transform: translate3d(300px,400px,0);
+		}
+		33%{
+			transform: translate3d(0,0,0);
+		}
+		66%{
+			transform: translate3d(0,0,0);
+		}
+		100%{
+			transform: translate3d(-300px,-400px,0);
+		}
+	}
 	</style>
 </head>
 <body>
-	<div class="wrap">
-		<img src="img/bg.png" alt="">
-		<div class="con">
-			<img src="img/tx1.png" alt="">
-		</div>	
-		<div class="text"><img src="img/text.png" alt=""></div>
+	<div class="index1">
+			<img src="img/bg.png" alt="">
+			<div class="con">
+				<img src="img/tx1.png" alt="">
+			</div>	
+			<div class="text"><img src="img/text.png" alt=""></div>
 	</div>
-	<div id="wrap">
+	<div id="wrap">		
 		<img src="img/bg3.png" alt="">
 		<div id="th"></div>
 		<div id="text" style="display: none;">
@@ -85,6 +129,10 @@
 	   <p>就能启动神秘能量保护地球</p>
 	   			<p>...</p>	
 	   	</div>
+
+	   	<div class="super">
+	   		<div class="heard"></div>
+	   	</div>
 	</div>
 </body>
 <script src="jquery-3.0.0.min.js"></script>
@@ -92,17 +140,23 @@
 var index=0;
 var word=document.getElementById("text");
 var th=document.getElementById("th");
-
-function qianzou(){
-	clearInterval(timer);
+//打字效果
+var len = 0;
+function qianzou(){	
 	var timer=setInterval(function(){
-	th.innerHTML = word.innerHTML.substring(0,index++); 
-	}, 300);	
-}
-	var $wrap=$('.wrap')
-	setInterval(function(){
-		$wrap.fadeOut();
-		qianzou()
+		th.innerHTML = word.innerHTML.substring(0,index++); 
+			console.log(index);
+		if (index>=word.innerHTML.length) {
+			clearInterval(timer);
+			th.style.display="none";			
+			$('.super').fadeIn().addClass('fly');
+		}
+	},30);		
+	}
+	var $index1=$('.index1')
+	setTimeout(function(){
+ 		$('#wrap').fadeIn();
+		qianzou()		
 	},1000)
 </script>
 </html>
