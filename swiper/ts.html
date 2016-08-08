@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		span{
+			display: block;
+			animation: move 1s infinite;
+			transform-origin:48px;
+		}
+		@keyframes move{
+			0%{
+				transform: translate3d(0,0,0) rotate(0deg);
+
+			}
+			100%{
+				transform: translate3d(200px,0,0) rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<span><img src="img/wheel.png" alt=""></span>
+</body>
+</html>
